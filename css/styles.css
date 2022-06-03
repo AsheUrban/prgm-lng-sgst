@@ -1,0 +1,17 @@
+h1 {
+  font-size: 48px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: olivedrab;
+}
+
+p {
+  font-size: 18px;
+}
+
+.container {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: rgb(250, 224, 228);
+  border: 2px solid black;
+}
+

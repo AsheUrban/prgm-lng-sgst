@@ -8,7 +8,7 @@ $(document).ready(function() {
     const age = $("input#age").val();
     const result1 = $("Ruby").val();
     const result2 = $("JavaScript").val();
-    const result3 = $("C#").val();
+    const result3 = $("C").val();
     if(age <=20) {
       $("#output").text(result1);  
     } else if (age<=40) {

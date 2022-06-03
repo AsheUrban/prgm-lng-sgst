@@ -3,16 +3,21 @@
 $(document).ready(function() {
   $("form#chooseLang").submit(function(event) {
     event.preventDefault();
+
     const name = $("input#name").val();
     const age = $("input#age").val();
     const operator = $("input:radio[name=operator]:checked").val();
-    console.log(name); // for debugging
-    console.log(age); // for debugging
+    const hobby = $("input:select[name=option]:selected").val();
 
     $("name").text(name);
     $("age").text(age);
+    $("operator").text(operator);
+    $("hobby").text(hobby);
 
-    $("#output").text(name);
-    $("#output").text(age);
-  });
+    let result;
+    if ()
+    
+    $("#output").text(result);
+
+    });
 });

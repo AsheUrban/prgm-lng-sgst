@@ -8,25 +8,17 @@ $(document).ready(function() {
     const age = $("input#age").val();
     const operator = $("input:radio[name=operator]:checked").val()
     const hobby = $("#hobby").val();
-    console.log("hobby");
+
     const result1 = "Ruby";
     const result2 = "JavaScript";
     const result3 = "C";
 
-    if(age <=20) {
-      if (operator === "toast");
-      if (hobby === "Skiing") 
-        $("#output").text(result1);
-      
-    } else if (age<=40) {
-      if (operator === "cereal");
-        if (hobby === "Trail Running");
-          $("#output").text(result2);   
-     
-    } else if (age<=60) {
-     if (operator === "toast");
-        if (hobby === "painting");
-          $("#output").text(result3);
+    if(age <=20 && operator==="toast" && hobby==="Skiing") {
+      $("#output").text(result1);
+    } else if (age<=40 && operator==="cereal" && hobby==="Trail Running") {
+      $("#output").text(result2);   
+    } else if (age<=60 && operator==="toast" && hobby==="Painting") {
+      $("#output").text(result3);
     }
   });
 });

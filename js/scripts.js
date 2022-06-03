@@ -20,5 +20,15 @@ $(document).ready(function() {
     } else if (age<=60 && operator==="toast" && hobby==="Painting") {
       $("#output").text(result3);
     }
+
+    function logReset(event) {
+      log.textContent = `Form reset! Time stamp: ${event.timeStamp}`;
+    }
+    
+    const form = document.getElementById('form');
+    const log = document.getElementById('log');
+    form.addEventListener('reset', logReset);
+
+ 
   });
 });

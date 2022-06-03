@@ -22,13 +22,13 @@
         <label for="age">How old are you?</label>
         <input id="age" class="form-control" type="text">
       </div>
-      <div class="radio">
+      <div class="radio form-check-inline">
         <label for="radio">Do you prefer toast or cereal in the mornings?
-          <input type="radio" name="operator" value="toast" checked>
+          <input type="radio" name="operator" value="toast">
           Toast
         </label>
       </div>
-      <div class="radio">
+      <div class="radio form-check-inline">
         <label>
           <input type="radio" name="operator" value="cereal">
           Cereal
@@ -43,15 +43,11 @@
         <label for="formControlRange">How much do you look like your mom?</label>
         <input type="range" class="form-control-range" id="formControlRange">
       </div>
-      <button type="submit" class="btn">Go!</button>
+      <button type="submit" class="btn btn-primary">Go!</button>
+      <button type="reset"class="btn btn-secondary">Reset Form</button>
     </form>
     <div id="output">
-
-
     </div>
-
-    
-  </div>
 
 </body>
 </html>

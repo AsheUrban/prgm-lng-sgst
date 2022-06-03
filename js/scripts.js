@@ -9,9 +9,9 @@ $(document).ready(function() {
     const operator = $("input:radio[name=operator]:checked").val()
     const hobby = $("#hobby").val();
 
-    const result1 = "Ruby";
-    const result2 = "JavaScript";
-    const result3 = "C";
+    const result1 = "Ruby is the best fit for your active lifestyle!";
+    const result2 = "JavaScript will take you to the moon and back!";
+    const result3 = "C[#] is the perfect painting partner!";
 
     if(age <=20 && operator==="toast" && hobby==="Skiing") {
       $("#output").text(result1);
@@ -21,14 +21,8 @@ $(document).ready(function() {
       $("#output").text(result3);
     }
 
-    function logReset(event) {
-      log.textContent = `Form reset! Time stamp: ${event.timeStamp}`;
+    function logReset() {
     }
     
-    const form = document.getElementById('form');
-    const log = document.getElementById('log');
-    form.addEventListener('reset', logReset);
-
- 
   });
 });

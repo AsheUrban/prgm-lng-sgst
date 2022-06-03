@@ -5,7 +5,7 @@
 $(document).ready(function() {
   $("form#chooseLang").submit(function(event) {
     event.preventDefault();
-    const age = $("input#age").val();
+    const age = parseInt($("input#age").val());
     const operator = $("input:radio[name=operator]:checked").val()
     const hobby = $("#hobby").val();
 
@@ -15,9 +15,9 @@ $(document).ready(function() {
 
     if(age <=20 && operator==="toast" && hobby==="Skiing") {
       $("#output").text(result1);
-    } else if (age<=40 && operator==="cereal" && hobby==="Trail Running") {
+    } else if (age <=40 && operator === "cereal" && hobby === "Trail Running") {
       $("#output").text(result2);   
-    } else if (age<=60 && operator==="toast" && hobby==="Painting") {
+    } else if (age <= 60 && operator === "toast" && hobby === "Painting") {
       $("#output").text(result3);
     }
 

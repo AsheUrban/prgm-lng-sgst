@@ -27,6 +27,8 @@ _In your cloned local repository you should find the following directories, in a
 * _results do not currently depend on range, "How much do you look like your mom?"._
 * _form refreshes using button, but results do not. Do not fully understand logReset function._
 
+_regarding range, mins and maxes must be set and conditions defined in the existing function._
+
 ## License
 * MIT
 

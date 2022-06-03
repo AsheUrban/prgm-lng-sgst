@@ -25,7 +25,7 @@ _In your cloned local repository you should find the following directories, in a
 
 * _result3 is returned when no age information is submitted._
 * _results do not currently depend on range, "How much do you look like your mom?"._
-* _form refreshes using button, but results do not._
+* _form refreshes using button, but results do not. Do not fully understand logReset function._
 
 ## License
 * MIT

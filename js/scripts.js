@@ -1,7 +1,3 @@
-
-
-//this is ui logic
-
 $(document).ready(function() {
   $("form#chooseLang").submit(function(event) {
     event.preventDefault();

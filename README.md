@@ -23,6 +23,7 @@ _In your cloned local repository you should find the following directories, in a
 
 * _result3 is returned when no age information is submitted._
 * _results do not currently depend on all variable collected by form._
+* _results do not refresh for next user._
 
 ## License
 * MIT

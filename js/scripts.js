@@ -7,10 +7,12 @@ $(document).ready(function() {
     const age = $("input#age").val();
     const operator = $("input:radio[name=operator]:checked").val();
     console.log(name); // for debugging
+    console.log(age); // for debugging
 
     $("name").text(name);
-    // $("age").text(age);
+    $("age").text(age);
 
     $("#output").text(name);
+    $("#output").text(age);
   });
 });

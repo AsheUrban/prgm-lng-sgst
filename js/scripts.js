@@ -6,16 +6,25 @@ $(document).ready(function() {
   $("form#chooseLang").submit(function(event) {
     event.preventDefault();
     const age = $("input#age").val();
-    const result1 = $("Ruby").val();
-    const result2 = $("JavaScript").val();
-    const result3 = $("C").val();
+    const operator = $("input:radio[name=operator]:checked").val()
+    const result1 = "Ruby";
+    const result2 = "JavaScript";
+    const result3 = "C";
+
     if(age <=20) {
-      $("#output").text(result1);  
+      if (operator === "Toast") {
+        $("#output").text(result1);
+      }
+      
     } else if (age<=40) {
-      $("#output").text(result2);
+      if (operator === "cereal");
+        $("#output").text(result2);   
+ 
+     
     } else {
       $("#output").text(result3);
     }
+    
     });
 });
 

@@ -7,13 +7,16 @@ $(document).ready(function() {
     event.preventDefault();
     const age = $("input#age").val();
     const operator = $("input:radio[name=operator]:checked").val()
+    const hobby = $("#hobby").val();
+    console.log("hobby");
     const result1 = "Ruby";
     const result2 = "JavaScript";
     const result3 = "C";
 
     if(age <=20) {
-      if (operator === "Toast") {
+      if (hobby === "Skiing") {
         $("#output").text(result1);
+        console.log(result1);
       }
       
     } else if (age<=40) {
@@ -21,7 +24,7 @@ $(document).ready(function() {
         $("#output").text(result2);   
  
      
-    } else {
+    } else if (age<=60) {
       $("#output").text(result3);
     }
     

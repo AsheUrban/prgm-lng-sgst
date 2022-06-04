@@ -20,7 +20,6 @@ $(document).ready(function() {
       $("#output").text(result4);
     }
 
-
     function logReset() {
     }
   

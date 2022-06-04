@@ -8,6 +8,7 @@ $(document).ready(function() {
     const result1 = "Ruby is the best fit for your active lifestyle!";
     const result2 = "JavaScript will take you to the moon and back!";
     const result3 = "C[#] is the perfect painting partner!";
+    const result4 = "Boohoo programming isn't for you!"
 
     if(age <=20 && operator==="toast" && hobby==="Skiing") {
       $("#output").text(result1);
@@ -15,6 +16,8 @@ $(document).ready(function() {
       $("#output").text(result2);   
     } else if (age === 60 && operator === "toast" && hobby === "Painting") {
       $("#output").text(result3);
+    } else {
+      $("#output").text(result4);
     }
 
     function logReset() {
